@@ -1,0 +1,27 @@
+GET http://localhost:5050/job/settings HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:5050/job/settings HTTP/1.1
+content-type: application/json
+
+{
+    "query": "Express.js",
+    "locations": ["Australia"],
+    "filterTime": "r2592000",
+    "filterType": ["F", "C"],
+    "filterExperience": ["2","3","4"],
+    "searchLimit": 100
+}
+
+###
+
+GET http://localhost:5050/job/statistics HTTP/1.1
+content-type: application/json
+
+
+###
+
+GET http://localhost:5050/jobs?jobQuery=Node.js HTTP/1.1
+content-type: application/json

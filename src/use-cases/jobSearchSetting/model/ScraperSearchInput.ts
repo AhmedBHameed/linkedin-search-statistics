@@ -27,6 +27,8 @@ export enum ExperienceLevelEnum {
 export interface ScraperSearchInput {
   query: string;
   locations: string[]; // This will be merged with the global options => ["United States", "Europe"]
+  backgroundColor: string;
+  borderColor: string;
   filterTime: TimeEnum;
   filterType: TypeEnum[];
   filterExperience: ExperienceLevelEnum[];

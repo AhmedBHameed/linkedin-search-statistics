@@ -1,4 +1,4 @@
-import {ValidationError} from '@hapi/joi';
+import {ValidationError} from 'joi';
 
 export interface ValidationResultData<T> {
   error?: ValidationError;

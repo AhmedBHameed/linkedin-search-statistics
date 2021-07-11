@@ -1,17 +1,27 @@
 import {CronJob} from 'cron';
 import {remoteFilter} from 'linkedin-jobs-scraper';
+import {IJobSearchLocationModel} from 'src/database/JobSearchLocationModel';
+import getJobSearchLocations from 'src/use-cases/getJobLocations.ts/getJobLocations.usecase';
 import {IJobSearchSetting} from '../database/JobSearchSettingModel';
 import getJobSearchSettings from '../use-cases/jobSearchSetting/getJobSearchSettings.usecase';
 import {callTryCatch} from '../util/callTryCatch';
 import {runLinkedInScraper, isScraperFinished} from './linkedinScraper';
+import {logger} from './Logger';
 
 class ScheduleTask {
   public async run() {
     new CronJob(
       '00 00 */8 * * *',
       async () => {
-        console.log('==>> isScraperFinished: ', isScraperFinished, new Date());
         if (isScraperFinished) {
+          const [searchLocationsError, searchLocationResults] = await callTryCatch(
+            async () => await getJobSearchLocations()
+          );
+          if (searchLocationsError) {
+            logger.error('', searchLocationsError);
+            return;
+          }
+
           const [error, data] = await callTryCatch(async () => await getJobSearchSettings());
           const scrapSettings = data as IJobSearchSetting[];
           if (!error && scrapSettings.length) {
@@ -19,7 +29,7 @@ class ScheduleTask {
               scrapSettings.map(setting => ({
                 query: setting.query,
                 options: {
-                  locations: setting.locations, // This will be merged with the global options => ["United States", "Europe"]
+                  locations: (searchLocationResults as IJobSearchLocationModel)?.locations || [],
                   filters: {
                     time: setting.filterTime,
                     type: setting.filterType,

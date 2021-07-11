@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderConfirmed matches snapshot 1`] = `
+<div>
+  <div
+    class="ant-row ant-row-center ant-row-middle sc-eCApnc kPSWDl"
+  >
+    <div
+      class="ant-col ant-col-xs-24 ant-col-md-22 ant-col-lg-20"
+    >
+      <h4
+        class="ant-typography sc-hKFxyN fVNkBq"
+      >
+        orderDisclaimer.title
+      </h4>
+      <div
+        class="ant-alert ant-alert-success ant-alert-with-description sc-bdnxRM giZtJW"
+        data-show="true"
+        role="alert"
+      >
+        <span
+          aria-label="check-circle"
+          class="anticon anticon-check-circle ant-alert-icon"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="check-circle"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0051.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z"
+            />
+            <path
+              d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+            />
+          </svg>
+        </span>
+        <div
+          class="ant-alert-content"
+        >
+          <div
+            class="ant-alert-message"
+          >
+            <span
+              class="sc-gtsrHT bwNXOn"
+            >
+              orderConfirmed.confirmationTitle
+            </span>
+          </div>
+          <div
+            class="ant-alert-description"
+          >
+            orderConfirmed.confirmationParagraph
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-jSFjdj gymRGT"
+      >
+        <button
+          class="ant-btn ant-btn-primary ant-btn-lg sc-gKAaRy pZYOi"
+          data-testid="back-button"
+          type="button"
+        >
+          <span
+            class="sc-dlnjwi jsqGlf"
+          >
+            orderConfirmed.actionButton
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

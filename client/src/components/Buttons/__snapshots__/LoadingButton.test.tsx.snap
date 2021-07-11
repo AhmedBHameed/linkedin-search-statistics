@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingButton matches snapshot 1`] = `
+<div>
+  <button
+    class="ant-btn ant-btn-primary"
+    data-testid="loading-button"
+    type="button"
+  >
+    <span
+      class="sc-bdnxRM bokTqS"
+    />
+  </button>
+</div>
+`;

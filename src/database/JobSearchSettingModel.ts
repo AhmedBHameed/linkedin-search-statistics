@@ -4,7 +4,11 @@ import {utcTime} from '../util/time';
 
 export interface IJobSearchSetting {
   query: string;
-  locations: string[]; // This will be merged with the global options => ["United States", "Europe"]
+  chartBarFillColor: string;
+  chartConfig: {
+    backgroundColor: string;
+    borderColor: string;
+  };
   filterTime: TimeEnum;
   filterType: TypeEnum[];
   filterExperience: ExperienceLevelEnum[];
@@ -16,7 +20,10 @@ const JobSearchSettingSchema = new Schema(
   {
     id: {type: String, required: true, unique: true},
     query: {type: String, required: true, unique: true},
-    locations: [{type: String, default: []}],
+    chartConfig: {
+      backgroundColor: {type: String, required: true},
+      borderColor: {type: String, required: true},
+    },
     filterTime: {type: String},
     filterType: [{type: String, default: []}],
     filterExperience: [{type: String, default: []}],

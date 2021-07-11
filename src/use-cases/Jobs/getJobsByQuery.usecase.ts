@@ -1,59 +1,55 @@
-import {callTryCatch} from 'src/util/callTryCatch';
+import {callTryCatch} from '../../util/callTryCatch';
+import {addYear, stringYearToDate} from '../../util/time';
 import jobScrapModel, {IJobScrapModel} from '../../database/JobScrapModel';
+import {JobQueryInput} from './models/jobQueryInput';
 
-const getJobsByQuery = async (query: string): Promise<IJobScrapModel[] | Error> => {
-  const [jobsError, jobsData] = await callTryCatch(async () =>
-    jobScrapModel.aggregate<IJobScrapModel>([
-      {
-        $match: {
-          query: query,
-          jobDate: {$ne: null},
-        },
-      },
-      {
-        $group: {
-          _id: {
-            $dateToString: {
-              format: '%Y-%m',
-              date: '$jobDate',
-            },
-            // query: '$query',
-            // month: {$month: '$jobDate'},
-            // year: {$year: '$jobDate'},
+const getJobsByQuery = async (inputData: JobQueryInput): Promise<{jobs: IJobScrapModel[]; count: number} | Error> => {
+  const {location, query, year, perPage, page} = inputData;
+  const startDate = stringYearToDate(year);
+  const endDate = addYear(year, 1);
+
+  const [jobsError, jobsData] = await callTryCatch(
+    async () =>
+      await jobScrapModel.aggregate<IJobScrapModel>([
+        {
+          $facet: {
+            jobs: [
+              {
+                $match: {
+                  jobDate: {$gte: startDate, $lt: endDate},
+                  location: location.toLowerCase(),
+                  query: query.toLowerCase(),
+                },
+              },
+              {$skip: perPage * (page - 1)},
+              {$limit: perPage * page},
+            ],
+            totalCount: [
+              {
+                $match: {
+                  jobDate: {$gte: startDate, $lt: endDate},
+                  location: location.toLowerCase(),
+                  query: query.toLowerCase(),
+                },
+              },
+              {
+                $group: {
+                  _id: null,
+                  count: {$sum: 1},
+                },
+              },
+            ],
           },
-          jobs: {
-            $push: '$$ROOT',
-          },
-          count: {$sum: 1},
         },
-      },
-      {
-        /* sort descending (latest subscriptions first) */
-        $sort: {
-          '_id.year': 1,
-          '_id.month': 1,
-        },
-      },
-      {
-        $limit: 2,
-      },
-      {
-        $project: {
-          _id: 0,
-          jobDateAsYearMonth: '$_id',
-          query: {$first: '$jobs.query'},
-          count: '$count',
-          data: '$$ROOT',
-        },
-      },
-    ])
+      ])
   );
 
   if (jobsError) {
     return jobsError as Error;
   }
 
-  return jobsData as IJobScrapModel[];
+  const results = jobsData as any;
+  return {jobs: results[0].jobs, count: results[0].totalCount[0].count};
 };
 
 export default getJobsByQuery;

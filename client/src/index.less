@@ -1,0 +1,59 @@
+@import '~antd/dist/antd.less';
+
+// Navigation bar background color.
+@layout-header-background: #fff;
+@body-background: #f0f2f5;
+@error-color: red;
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: local('Gotham'),
+    url('./statics/fonts/Gotham_Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: local('Gotham'),
+    url('./statics/fonts/Gotham_Medium.otf') format('opentype');
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Gotham Light', 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+
+  .ant-btn .anticon-close {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+/**
+ * This is Ant Design context wrapper. Unfortunately they used DIV here.
+ * To prevent any layout hurdles, we added basic style.
+ * We need it for toast message.
+ */
+.ant-space.ant-space-horizontal.ant-space-align-center {
+  display: flex;
+  height: 100%;
+  .ant-space-item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#root {
+  height: 100%;
+}

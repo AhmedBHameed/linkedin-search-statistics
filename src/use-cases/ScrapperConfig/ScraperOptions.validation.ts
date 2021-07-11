@@ -1,5 +1,4 @@
-import {ValidationError} from '@hapi/joi';
-import Joi from '@hapi/joi';
+import Joi, {ValidationError} from 'joi';
 import {
   ExperienceLevelEnum,
   ScraperSearchInput,
@@ -27,6 +26,8 @@ const ScraperOptionsValidationSchema = Joi.object<ScraperSearchInput>({
     Joi.string().valid(TypeEnum.TEMPORARY),
     Joi.string().valid(TypeEnum.VOLUNTEER)
   ),
+  backgroundColor: Joi.string().required(),
+  borderColor: Joi.string().required(),
   filterExperience: Joi.array().items(
     Joi.string().valid(ExperienceLevelEnum.ASSOCIATE),
     Joi.string().valid(ExperienceLevelEnum.DIRECTOR),

@@ -1,0 +1,36 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeLens": true,
+  "i18n-ally.localesPaths": "src/i18n",
+  "i18n-ally.displayLanguage": "de",
+  "i18n-ally.theme.annotation": "#4bff00",
+  "i18n-ally.theme.annotationMissing": "#d37070",
+  "i18n-ally.keystyle": "nested",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "cSpell.words": [
+    "Antd",
+    "Bioma",
+    "Sider",
+    "Speciality",
+    "birthdate",
+    "datepicker",
+    "gathom",
+    "languagedetector",
+    "numberfield",
+    "signup",
+    "submenu",
+    "testid",
+    "textfield"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}

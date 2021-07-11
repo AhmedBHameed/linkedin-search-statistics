@@ -6,13 +6,13 @@ const {port, version, isProd} = environment;
 
 const logWelcome = (): void =>
   console.log(
-    '\n\t🛡️ ###########################🛡️',
-    '\n\n\t Server is listening to:',
+    '\n🛡️ ###########################🛡️',
+    '\n\n Server is listening to:',
     `\n${showIp()
-      .map(ip => `\n\t 🚀 http://${ip}:${port}`)
-      .join('')}\n\n\t 🔨 Build ver: ${version}`,
-    `\n\n\t 📳 ${isProd ? 'Production' : 'Development'} mode`,
-    '\n\n\t🛡️ ###########################🛡️'
+      .map(ip => `\n 🚀 http://${ip}:${port}`)
+      .join('')}\n\n 🔨 Build ver: ${version}`,
+    `\n\n 📳 ${isProd ? 'Production' : 'Development'} mode`,
+    '\n\n🛡️ ###########################🛡️'
   );
 
 export default logWelcome;

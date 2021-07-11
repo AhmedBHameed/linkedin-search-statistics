@@ -3,6 +3,9 @@ import upsertJobSearchSettings from '../use-cases/jobSearchSetting/upsertJobSear
 import getJobSearchSettings from '../use-cases/jobSearchSetting/getJobSearchSettings.usecase';
 import {callTryCatch} from '../util/callTryCatch';
 import validateScraperSearchInput from '../use-cases/ScrapperConfig/ScraperOptions.validation';
+import environment from '../config/environment';
+
+const {rootPath, apiVersion} = environment;
 
 const JobSearchSettingRouter = express.Router();
 
@@ -22,15 +25,16 @@ const StoreJobSearchSettingController = async (req: Request, res: Response) => {
     return;
   }
 
-  const [error, response] = await callTryCatch(async () => await upsertJobSearchSettings(validationResult.value));
+  const [error, response] = await callTryCatch(async () => upsertJobSearchSettings(validationResult.value));
 
   if (error) {
     res.status(400).send(error);
+    return;
   }
   res.send(response);
 };
 
-JobSearchSettingRouter.post('/job/settings', StoreJobSearchSettingController);
-JobSearchSettingRouter.get('/job/settings', GetJobSearchSettingController);
+JobSearchSettingRouter.post(`${rootPath}${apiVersion}/settings`, StoreJobSearchSettingController);
+JobSearchSettingRouter.get(`${rootPath}${apiVersion}/settings`, GetJobSearchSettingController);
 
 export {JobSearchSettingRouter};

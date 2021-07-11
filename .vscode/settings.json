@@ -12,12 +12,9 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "node_modules": true
+    "node_modules": false
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeLens": false,
-  "cSpell.words": [
-    "ulid",
-    "upsert"
-  ]
+  "cSpell.words": ["ulid", "upsert"]
 }

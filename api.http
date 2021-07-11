@@ -1,27 +1,29 @@
-GET http://localhost:5050/job/settings HTTP/1.1
+GET http://localhost:5050/job-scraper/api/v1/settings HTTP/1.1
 content-type: application/json
 
 ###
 
-POST http://localhost:5050/job/settings HTTP/1.1
+POST http://localhost:5050/job-scraper/api/v1/settings HTTP/1.1
 content-type: application/json
 
 {
-    "query": "Express.js",
-    "locations": ["Australia"],
+    "query": "graphql",
+    "locations": ["germany", "australia", "canada", "austria"],
     "filterTime": "r2592000",
     "filterType": ["F", "C"],
+    "backgroundColor": "rgba(224, 90, 166, 0.2)",
+    "borderColor": "rgba(224, 90, 166, 1)",
     "filterExperience": ["2","3","4"],
     "searchLimit": 100
 }
 
 ###
 
-GET http://localhost:5050/job/statistics HTTP/1.1
+GET http://localhost:5050/job-scraper/api/v1/statistics?year=2021&location=Australia HTTP/1.1
 content-type: application/json
 
 
 ###
 
-GET http://localhost:5050/jobs?jobQuery=Node.js HTTP/1.1
+GET http://localhost:5050/job-scraper/api/v1/jobs?perPage=50&page=1&year=2021&location=australia&query=Node.js HTTP/1.1
 content-type: application/json

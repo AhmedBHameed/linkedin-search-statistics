@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderSteps matches snapshot 1`] = `
+<div>
+  <div
+    class="ant-row ant-row-center ant-row-middle sc-iCoGMd dBquog"
+  >
+    <div
+      class="ant-col ant-col-xs-24 ant-col-md-22 ant-col-lg-20"
+    >
+      <h4
+        class="ant-typography sc-gKAaRy hKUzkP"
+      >
+        orderDisclaimer.title
+      </h4>
+      <div
+        class="ant-steps ant-steps-vertical sc-gtsrHT jCmDfF ant-steps-default"
+      >
+        <div
+          class="ant-steps-item ant-steps-item-process sc-dlnjwi krbqqY ant-steps-item-active"
+        >
+          <div
+            class="ant-steps-item-container"
+          >
+            <div
+              class="ant-steps-item-tail"
+            />
+            <div
+              class="ant-steps-item-icon"
+            >
+              <span
+                class="ant-steps-icon"
+              >
+                1
+              </span>
+            </div>
+            <div
+              class="ant-steps-item-content"
+            >
+              <div
+                class="ant-steps-item-title"
+              >
+                <span
+                  class="sc-bdnxRM sc-hKFxyN bokTqS fwThnk"
+                >
+                  orderInformation.patientInformationStepLabel
+                </span>
+              </div>
+              <div
+                class="ant-steps-item-description"
+              >
+                orderInformation.patientInformationStepDescription
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-steps-item ant-steps-item-wait sc-dlnjwi krbqqY"
+        >
+          <div
+            class="ant-steps-item-container"
+          >
+            <div
+              class="ant-steps-item-tail"
+            />
+            <div
+              class="ant-steps-item-icon"
+            >
+              <span
+                class="ant-steps-icon"
+              >
+                2
+              </span>
+            </div>
+            <div
+              class="ant-steps-item-content"
+            >
+              <div
+                class="ant-steps-item-title"
+              >
+                <span
+                  class="sc-bdnxRM sc-hKFxyN bokTqS fwThnk"
+                >
+                  orderInformation.orderDetailsStepLabel
+                </span>
+              </div>
+              <div
+                class="ant-steps-item-description"
+              >
+                orderInformation.orderDetailsStepDescription
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-steps-item ant-steps-item-wait sc-dlnjwi krbqqY"
+        >
+          <div
+            class="ant-steps-item-container"
+          >
+            <div
+              class="ant-steps-item-tail"
+            />
+            <div
+              class="ant-steps-item-icon"
+            >
+              <span
+                class="ant-steps-icon"
+              >
+                3
+              </span>
+            </div>
+            <div
+              class="ant-steps-item-content"
+            >
+              <div
+                class="ant-steps-item-title"
+              >
+                <span
+                  class="sc-bdnxRM sc-hKFxyN bokTqS fwThnk"
+                >
+                  orderInformation.confirmationStepLabel
+                </span>
+              </div>
+              <div
+                class="ant-steps-item-description"
+              >
+                orderInformation.confirmationStepDescription
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span>
+        Step 1 - Order information form
+      </span>
+    </div>
+  </div>
+</div>
+`;

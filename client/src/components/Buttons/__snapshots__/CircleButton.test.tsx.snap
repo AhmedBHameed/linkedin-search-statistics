@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CloseCircleButton matches snapshot 1`] = `
+<div>
+  <button
+    class="ant-btn ant-btn-primary ant-btn-circle"
+    data-testid="close-button"
+    type="button"
+  />
+</div>
+`;

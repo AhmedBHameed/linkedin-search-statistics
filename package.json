@@ -39,9 +39,12 @@
     ]
   },
   "devDependencies": {
+    "@types/cli-table": "^0.3.0",
+    "@types/cookie-parser": "^1.4.2",
     "@types/cron": "^1.7.2",
     "@types/express": "^4.17.12",
     "@types/hapi__joi": "^17.1.6",
+    "@types/ioredis": "^4.26.5",
     "@types/node": "^16.0.0",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "eslint": "^7.30.0",
@@ -62,13 +65,18 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
+    "@joi/date": "^2.1.0",
+    "axios": "^0.21.1",
     "bluebird": "^3.7.2",
+    "cli-table": "^0.3.6",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "cron": "^1.8.2",
     "express": "^4.17.1",
     "express-mongo-sanitize": "^2.1.0",
     "helmet": "^4.6.0",
+    "ioredis": "^4.27.6",
+    "joi": "^17.4.0",
     "linkedin-jobs-scraper": "^8.0.0",
     "linkedin-private-api": "^1.0.4",
     "moment": "^2.29.1",

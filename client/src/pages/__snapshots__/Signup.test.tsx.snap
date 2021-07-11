@@ -1,0 +1,777 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signup matches snapshot 1`] = `
+<div>
+  <div
+    class="ant-row ant-row-center ant-row-middle sc-kEqXSa fUiPLR"
+  >
+    <div
+      class="ant-col ant-col-xs-24 ant-col-md-20"
+    >
+      <div
+        class="ant-row ant-row-center ant-row-middle sc-kEqXSa fUiPLR"
+      >
+        <div
+          class="ant-card ant-card-bordered"
+        >
+          <div
+            class="ant-card-body"
+          >
+            <form
+              class="sc-iqAclL kgxeLt"
+              data-testid="signup-form"
+            >
+              <div
+                class="ant-row ant-row-center ant-row-middle"
+              >
+                <svg
+                  class="sc-bdnxRM goXlsq"
+                >
+                  brand-light-theme.svg
+                </svg>
+              </div>
+              <div
+                class="ant-row"
+              >
+                <div
+                  class="ant-col ant-col-xs-24"
+                >
+                  <h5
+                    class="ant-typography sc-crzoAE bvPise"
+                  >
+                    signup.headTitle
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="ant-row"
+                style="margin: -8px -8px -8px -8px;"
+              >
+                <div
+                  class="ant-col ant-col-xs-24 ant-col-md-8"
+                  style="padding: 8px 8px 8px 8px;"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="signup.titleLabel"
+                      >
+                        signup.titleLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <input
+                            aria-label="title"
+                            class="ant-input ant-input-lg"
+                            data-testid="title-input"
+                            name="title"
+                            placeholder="signup.titlePlaceholder"
+                            type="text"
+                            value=""
+                          />
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ant-col ant-col-xs-24 ant-col-md-8"
+                  style="padding: 8px 8px 8px 8px;"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="signup.firstNameLabel"
+                      >
+                        signup.firstNameLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <input
+                            aria-label="first name"
+                            class="ant-input ant-input-lg"
+                            data-testid="first-name-input"
+                            name="firstName"
+                            placeholder="signup.firstNamePlaceholder"
+                            type="text"
+                            value=""
+                          />
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ant-col ant-col-xs-24 ant-col-md-8"
+                  style="padding: 8px 8px 8px 8px;"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="signup.lastNameLabel"
+                      >
+                        signup.lastNameLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <input
+                            aria-label="last name"
+                            class="ant-input ant-input-lg"
+                            data-testid="last-name-input"
+                            name="lastName"
+                            placeholder="signup.lastNamePlaceholder"
+                            type="text"
+                            value=""
+                          />
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row"
+                style="margin: -8px -8px -8px -8px;"
+              >
+                <div
+                  class="ant-col ant-col-xs-24 ant-col-md-12"
+                  style="padding: 8px 8px 8px 8px;"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="common.emailLabel"
+                      >
+                        common.emailLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <input
+                            aria-label="email"
+                            class="ant-input ant-input-lg"
+                            data-testid="email-input"
+                            name="email"
+                            placeholder="common.emailPlaceholder"
+                            type="text"
+                            value=""
+                          />
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ant-col ant-col-xs-24 ant-col-md-12"
+                  style="padding: 8px 8px 8px 8px;"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="signup.phoneLabel"
+                      >
+                        signup.phoneLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <input
+                            aria-label="phone"
+                            class="ant-input ant-input-lg"
+                            data-testid="phone-input"
+                            name="phone"
+                            placeholder="signup.phonePlaceholder"
+                            type="text"
+                            value=""
+                          />
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row"
+              >
+                <div
+                  class="ant-col ant-col-xs-24"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="common.passwordLabel"
+                      >
+                        common.passwordLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <span
+                            class="ant-input-affix-wrapper ant-input-affix-wrapper-lg ant-input-password ant-input-password-large"
+                          >
+                            <input
+                              action="click"
+                              aria-label="password"
+                              class="ant-input ant-input-lg"
+                              data-testid="password-input"
+                              name="password"
+                              placeholder="common.passwordPlaceholder"
+                              type="password"
+                              value=""
+                            />
+                            <span
+                              class="ant-input-suffix"
+                            >
+                              <span
+                                aria-label="eye-invisible"
+                                class="anticon anticon-eye-invisible ant-input-password-icon"
+                                role="img"
+                                tabindex="-1"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  data-icon="eye-invisible"
+                                  fill="currentColor"
+                                  focusable="false"
+                                  height="1em"
+                                  viewBox="64 64 896 896"
+                                  width="1em"
+                                >
+                                  <path
+                                    d="M942.2 486.2Q889.47 375.11 816.7 305l-50.88 50.88C807.31 395.53 843.45 447.4 874.7 512 791.5 684.2 673.4 766 512 766q-72.67 0-133.87-22.38L323 798.75Q408 838 512 838q288.3 0 430.2-300.3a60.29 60.29 0 000-51.5zm-63.57-320.64L836 122.88a8 8 0 00-11.32 0L715.31 232.2Q624.86 186 512 186q-288.3 0-430.2 300.3a60.3 60.3 0 000 51.5q56.69 119.4 136.5 191.41L112.48 835a8 8 0 000 11.31L155.17 889a8 8 0 0011.31 0l712.15-712.12a8 8 0 000-11.32zM149.3 512C232.6 339.8 350.7 258 512 258c54.54 0 104.13 9.36 149.12 28.39l-70.3 70.3a176 176 0 00-238.13 238.13l-83.42 83.42C223.1 637.49 183.3 582.28 149.3 512zm246.7 0a112.11 112.11 0 01146.2-106.69L401.31 546.2A112 112 0 01396 512z"
+                                  />
+                                  <path
+                                    d="M508 624c-3.46 0-6.87-.16-10.25-.47l-52.82 52.82a176.09 176.09 0 00227.42-227.42l-52.82 52.82c.31 3.38.47 6.79.47 10.25a111.94 111.94 0 01-112 112z"
+                                  />
+                                </svg>
+                              </span>
+                            </span>
+                          </span>
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ant-col ant-col-xs-24"
+                />
+              </div>
+              <div
+                class="ant-row"
+                style="margin: -8px -8px -8px -8px;"
+              >
+                <div
+                  class="ant-col ant-col-xs-24 ant-col-md-12"
+                  style="padding: 8px 8px 8px 8px;"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="signup.medicalSpecialityLabel"
+                      >
+                        signup.medicalSpecialityLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <div
+                            aria-label="medical speciality options"
+                            class="ant-select ant-select-lg ant-select-single ant-select-show-arrow"
+                            data-testid="medical-speciality-select-box"
+                            style="border-color: #fff;"
+                          >
+                            <div
+                              class="ant-select-selector"
+                            >
+                              <span
+                                class="ant-select-selection-search"
+                              >
+                                <input
+                                  aria-activedescendant="rc_select_TEST_OR_SSR_list_0"
+                                  aria-autocomplete="list"
+                                  aria-controls="rc_select_TEST_OR_SSR_list"
+                                  aria-haspopup="listbox"
+                                  aria-label="medical speciality options"
+                                  aria-owns="rc_select_TEST_OR_SSR_list"
+                                  autocomplete="off"
+                                  class="ant-select-selection-search-input"
+                                  id="rc_select_TEST_OR_SSR"
+                                  readonly=""
+                                  role="combobox"
+                                  style="opacity: 0;"
+                                  type="search"
+                                  unselectable="on"
+                                  value=""
+                                />
+                              </span>
+                              <span
+                                class="ant-select-selection-placeholder"
+                              >
+                                signup.medicalSpecialityPlaceholder
+                              </span>
+                            </div>
+                            <span
+                              aria-hidden="true"
+                              class="ant-select-arrow"
+                              style="user-select: none;"
+                              unselectable="on"
+                            >
+                              <span
+                                aria-label="down"
+                                class="anticon anticon-down ant-select-suffix"
+                                role="img"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  data-icon="down"
+                                  fill="currentColor"
+                                  focusable="false"
+                                  height="1em"
+                                  viewBox="64 64 896 896"
+                                  width="1em"
+                                >
+                                  <path
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                                  />
+                                </svg>
+                              </span>
+                            </span>
+                          </div>
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ant-col ant-col-xs-24 ant-col-md-12"
+                  style="padding: 8px 8px 8px 8px;"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="signup.practiceLabel"
+                      >
+                        signup.practiceLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <input
+                            aria-label="practice place"
+                            class="ant-input ant-input-lg"
+                            data-testid="practice-place-input"
+                            name="practicePlace"
+                            placeholder="signup.practicePlaceholder"
+                            type="text"
+                            value=""
+                          />
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row"
+              >
+                <div
+                  class="ant-col ant-col-xs-24"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-label"
+                    >
+                      <label
+                        class=""
+                        title="signup.countryLabel"
+                      >
+                        signup.countryLabel
+                      </label>
+                    </div>
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <div
+                            aria-label="country options"
+                            class="ant-select ant-select-lg ant-select-single ant-select-show-arrow ant-select-show-search"
+                            data-testid="country-select-field"
+                          >
+                            <div
+                              class="ant-select-selector"
+                            >
+                              <span
+                                class="ant-select-selection-search"
+                              >
+                                <input
+                                  aria-activedescendant="rc_select_TEST_OR_SSR_list_0"
+                                  aria-autocomplete="list"
+                                  aria-controls="rc_select_TEST_OR_SSR_list"
+                                  aria-haspopup="listbox"
+                                  aria-label="country options"
+                                  aria-owns="rc_select_TEST_OR_SSR_list"
+                                  autocomplete="off"
+                                  class="ant-select-selection-search-input"
+                                  id="rc_select_TEST_OR_SSR"
+                                  role="combobox"
+                                  type="search"
+                                  value=""
+                                />
+                              </span>
+                              <span
+                                class="ant-select-selection-placeholder"
+                              >
+                                signup.countryPlaceholder
+                              </span>
+                            </div>
+                            <span
+                              aria-hidden="true"
+                              class="ant-select-arrow"
+                              style="user-select: none;"
+                              unselectable="on"
+                            >
+                              <span
+                                aria-label="down"
+                                class="anticon anticon-down ant-select-suffix"
+                                role="img"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  data-icon="down"
+                                  fill="currentColor"
+                                  focusable="false"
+                                  height="1em"
+                                  viewBox="64 64 896 896"
+                                  width="1em"
+                                >
+                                  <path
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                                  />
+                                </svg>
+                              </span>
+                            </span>
+                          </div>
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row"
+              >
+                <div
+                  class="ant-col ant-col-xs-24"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <label
+                            class="ant-checkbox-wrapper sc-dlnjwi"
+                          >
+                            <span
+                              class="ant-checkbox"
+                            >
+                              <input
+                                aria-label="terms and conditions"
+                                class="ant-checkbox-input"
+                                data-testid="terms-and-conditions-checkbox"
+                                type="checkbox"
+                                value=""
+                              />
+                              <span
+                                class="ant-checkbox-inner"
+                              />
+                            </span>
+                            <span>
+                              signup.termsAndConditionLabel
+                            </span>
+                          </label>
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ant-col ant-col-xs-24"
+                >
+                  <div
+                    class="ant-row ant-form-item sc-eCApnc fExcEz"
+                  >
+                    <div
+                      class="ant-col ant-form-item-control"
+                    >
+                      <div
+                        class="ant-form-item-control-input"
+                      >
+                        <div
+                          class="ant-form-item-control-input-content"
+                        >
+                          <label
+                            class="ant-checkbox-wrapper sc-dlnjwi"
+                          >
+                            <span
+                              class="ant-checkbox"
+                            >
+                              <input
+                                aria-label="doctor licensed"
+                                class="ant-checkbox-input"
+                                data-testid="licensed-doctor-checkbox"
+                                type="checkbox"
+                                value=""
+                              />
+                              <span
+                                class="ant-checkbox-inner"
+                              />
+                            </span>
+                            <span>
+                              signup.doctorLicenseLabel
+                            </span>
+                          </label>
+                          <small
+                            class="sc-jSFjdj fmCvnz ant-form-item-explain ant-form-item-explain-error"
+                            data-testid=""
+                          >
+                             
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-row-end"
+              >
+                <a
+                  href="/login"
+                >
+                  signup.alreadyRegister
+                </a>
+              </div>
+              <div
+                class="ant-row"
+              >
+                <button
+                  class="ant-btn ant-btn-primary ant-btn-lg sc-dIsUp izwWel"
+                  data-testid="signup-submit-button"
+                  type="submit"
+                >
+                  <span
+                    aria-label="edit"
+                    class="anticon anticon-edit"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="edit"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 000-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 009.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="sc-jrsJWt gqswSH"
+                  >
+                    signup.actionButton
+                  </span>
+                </button>
+              </div>
+              <div
+                class="ant-row ant-row-center ant-row-middle"
+              >
+                <a
+                  href="/help"
+                >
+                  signup.needHelp
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

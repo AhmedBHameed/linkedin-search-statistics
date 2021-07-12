@@ -12,6 +12,6 @@ const GetJobsScrapWebAppController = async (req: Request, res: Response) => {
   res.set('Content-Type', 'text/html').sendFile(resolve('client/build/index.html'));
 };
 
-JobsScrapWebAppRouter.get(`${rootPath}`, GetJobsScrapWebAppController);
+JobsScrapWebAppRouter.get(`${rootPath}/*`, GetJobsScrapWebAppController);
 
 export {JobsScrapWebAppRouter};

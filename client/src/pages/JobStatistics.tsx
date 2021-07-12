@@ -204,7 +204,6 @@ const JobStatistics: React.FC = () => {
                   <JobStatisticChart
                     jobStatisticData={jobStatisticQuery.data}
                     searchSettingsData={searchSettingsQuery.data}
-                    year={year}
                   />
                 )
               )}

@@ -1,5 +1,5 @@
 export interface JobStatisticsModel {
-  query: {
+  query?: {
     year: string;
     location: string;
     searchValues: string[];

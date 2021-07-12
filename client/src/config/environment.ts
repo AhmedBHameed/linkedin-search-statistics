@@ -7,7 +7,7 @@ const environment = {
   appVersion,
   envName,
   authDomainApi: isProduction
-    ? 'https://www.ahmedhameed.dev'
+    ? 'https://ahmedhameed.dev'
     : 'http://localhost:5000',
   domainApi: isProduction
     ? 'https://www.ahmedhameed.dev'

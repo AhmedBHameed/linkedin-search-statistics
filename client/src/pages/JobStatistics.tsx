@@ -46,7 +46,7 @@ const JobStatistics: React.FC = () => {
 
   const locationsOptions = useMemo(
     () =>
-      jobSearchLocations.data?.locations.map((choice) => ({
+      jobSearchLocations.data?.locations?.map((choice) => ({
         label: choice,
         value: choice,
       })) || [],
@@ -204,6 +204,7 @@ const JobStatistics: React.FC = () => {
                   <JobStatisticChart
                     jobStatisticData={jobStatisticQuery.data}
                     searchSettingsData={searchSettingsQuery.data}
+                    year={year}
                   />
                 )
               )}

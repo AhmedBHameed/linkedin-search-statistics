@@ -8,7 +8,7 @@ import {JobSearchLocationsModel} from '../models/JobSearchLocationsModel';
 
 const useFetchJobSearchLocations = () => {
   const {notifyError} = useToastMessage();
-  const [data, setData] = useState<JobSearchLocationsModel>();
+  const [data, setData] = useState<JobSearchLocationsModel | undefined>();
   const [error, setError] = useState<Error | undefined>();
   const [loading, setLoading] = useState(false);
 

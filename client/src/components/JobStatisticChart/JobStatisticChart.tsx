@@ -28,20 +28,22 @@ ReactChart.register(
 );
 
 interface JobStatisticChartProps {
-  jobStatisticData: JobStatisticsModel;
+  jobStatisticData?: JobStatisticsModel;
   searchSettingsData: SearchSettingModel[];
+  year: string;
 }
 
 const JobStatisticChart: React.FC<JobStatisticChartProps> = ({
   jobStatisticData,
   searchSettingsData,
+  year,
 }) => {
   const [chartData, setChartData] = useState<any>();
 
   const initChartConfig = useCallback(() => {
     const dataSets: any[] = [];
-    const queries: string[] = jobStatisticData.query.searchValues;
-    jobStatisticData.query.searchValues.forEach((value) => {
+    const queries: string[] = jobStatisticData?.query.searchValues || [];
+    jobStatisticData?.query.searchValues.forEach((value) => {
       const chartConfig = searchSettingsData.find(
         (setting) => setting.query === value
       )?.chartConfig;
@@ -55,7 +57,7 @@ const JobStatisticChart: React.FC<JobStatisticChartProps> = ({
     });
 
     let indexOfConfig: number;
-    jobStatisticData.statistics.forEach((queryArray) => {
+    jobStatisticData?.statistics.forEach((queryArray) => {
       if (!queryArray.length) return;
       const dataArray: number[] = Array(12).fill([0]);
       queryArray.forEach((item) => {
@@ -105,9 +107,9 @@ const JobStatisticChart: React.FC<JobStatisticChartProps> = ({
           plugins: {
             title: {
               display: true,
-              text: `Jobs per month statistics for ${
-                jobStatisticData.query.year
-              } in area (${upperCaseWord(jobStatisticData.query.location)})`,
+              text: `Jobs per month statistics for ${year} in area (${upperCaseWord(
+                jobStatisticData?.query.location || ''
+              )})`,
             },
             zoom: {
               pan: {

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jobs-scrap/static/css/main.120428e8.chunk.css",
-    "main.js": "/jobs-scrap/static/js/main.64d7f5e3.chunk.js",
-    "main.js.map": "/jobs-scrap/static/js/main.64d7f5e3.chunk.js.map",
+    "main.js": "/jobs-scrap/static/js/main.e4d5e36c.chunk.js",
+    "main.js.map": "/jobs-scrap/static/js/main.e4d5e36c.chunk.js.map",
     "runtime-main.js": "/jobs-scrap/static/js/runtime-main.f8a74a2a.js",
     "runtime-main.js.map": "/jobs-scrap/static/js/runtime-main.f8a74a2a.js.map",
     "static/js/2.f210f830.chunk.js": "/jobs-scrap/static/js/2.f210f830.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.f8a74a2a.js",
     "static/js/2.f210f830.chunk.js",
     "static/css/main.120428e8.chunk.css",
-    "static/js/main.64d7f5e3.chunk.js"
+    "static/js/main.e4d5e36c.chunk.js"
   ]
 }

@@ -8,7 +8,7 @@ import {JobStatisticsModel} from '../models/JobStatisticsModel';
 
 const useFetchJobStatistics = () => {
   const {notifyError} = useToastMessage();
-  const [data, setData] = useState<JobStatisticsModel>();
+  const [data, setData] = useState<JobStatisticsModel | undefined>();
   const [error, setError] = useState<Error | undefined>();
   const [loading, setLoading] = useState(false);
 

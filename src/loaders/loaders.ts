@@ -45,13 +45,13 @@ export default async (): Promise<void> => {
       credentials: true,
     })
   );
+  app.use(helmet({contentSecurityPolicy: false}));
   app.use(xss());
   app.use(cookieParser());
   app.use(validateTokens());
   app.use(express.json());
   app.use(express.urlencoded({extended: true}));
   app.use(mongoSanitize());
-  app.use(helmet({contentSecurityPolicy: false}));
 
   app.use(`${rootPath}/static`, express.static('client/build/static'));
 

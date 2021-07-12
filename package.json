@@ -78,7 +78,6 @@
     "ioredis": "^4.27.6",
     "joi": "^17.4.0",
     "linkedin-jobs-scraper": "^8.0.0",
-    "linkedin-private-api": "^1.0.4",
     "moment": "^2.29.1",
     "mongoose": "^5.13.2",
     "puppeteer": "^10.1.0",

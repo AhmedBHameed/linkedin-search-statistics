@@ -8,7 +8,7 @@ import {StatisticInput} from './models/StatisticInputModel';
 const getStatistics = async (
   data: StatisticInput
 ): Promise<
-  {query: {year: string; searchValues: string[]; location: string}; statistics: IJobScrapModel[][]} | Error
+  {query: {year: string; searchValues: string[]; location: string}; statistics: IJobScrapModel[][] | []} | Error
 > => {
   const [searchSettingsError, searchSettingsData] = await callTryCatch(async () => await jobSearchSettingModel.find());
   if (searchSettingsError) {
@@ -83,12 +83,15 @@ const getStatistics = async (
 
   if (statisticError) {
     logger.error('', statisticError);
-    throw statisticError as Error;
+    return {
+      query: {year: parseYearFromDate(data.year), searchValues: [], location: data.location},
+      statistics: (statisticData as IJobScrapModel[][]) || [],
+    };
   }
 
   return {
     query: {year: parseYearFromDate(data.year), searchValues, location: data.location},
-    statistics: statisticData as IJobScrapModel[][],
+    statistics: (statisticData as IJobScrapModel[][]) || [],
   };
 };
 

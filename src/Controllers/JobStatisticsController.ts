@@ -22,6 +22,7 @@ const GetJobStatisticsController = async (req: Request, res: Response) => {
 
   if (catchError) {
     res.status(400).send(catchError);
+    return;
   }
   res.send(response);
 };

@@ -82,7 +82,8 @@ const getStatistics = async (
   );
 
   if (statisticError) {
-    return statisticError as Error;
+    logger.error('', statisticError);
+    throw statisticError as Error;
   }
 
   return {

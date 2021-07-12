@@ -25,6 +25,10 @@ const NAVIGATION_ROUTES = {
     strict: true,
     path: '/dashboard',
   },
+  jobs: {
+    strict: true,
+    path: '/jobs',
+  },
   statistics: {
     strict: true,
     path: '/',

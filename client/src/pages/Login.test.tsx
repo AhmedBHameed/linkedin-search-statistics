@@ -79,8 +79,8 @@ describe('Login', () => {
       /**
        * The idea here is to match localization key of the error.
        */
-      expect(inputErrors[0].textContent).toBe('validationError.required');
-      expect(inputErrors[1].textContent).toBe('validationError.required');
+      expect(inputErrors[0].textContent).toBe('Field required');
+      expect(inputErrors[1].textContent).toBe('Field required');
       expect(mockGoToDashboard).toHaveBeenCalledTimes(0);
       expect(mockNotifyError).toHaveBeenCalledTimes(0);
     });

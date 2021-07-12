@@ -80,7 +80,7 @@ describe('Signup', () => {
        * Staring our expectation here
        */
       inputErrors.forEach(({textContent}) => {
-        expect(textContent).toBe('validationError.required');
+        expect(textContent).toBe('Field required');
       });
 
       expect(licensedDoctorCheckbox.nextElementSibling).toHaveStyle(

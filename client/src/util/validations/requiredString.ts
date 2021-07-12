@@ -18,7 +18,7 @@ export const requiredString = (conf?: StringErrorMessages) =>
   Joi.string()
     .required()
     .messages({
-      'string.empty': conf?.required || 'validationError.required',
-      'string.base': conf?.required || 'validationError.required',
-      'any.required': conf?.required || 'validationError.required',
+      'string.empty': conf?.required || 'Field required',
+      'string.base': conf?.required || 'Field required',
+      'any.required': conf?.required || 'Field required',
     });

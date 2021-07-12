@@ -16,7 +16,6 @@ const useLogout = () => {
     setLoading(false);
 
     if (error) {
-      alert(JSON.stringify(error));
       // eslint-disable-next-line no-console
       console.error('<LogoutHook />', error);
       return;

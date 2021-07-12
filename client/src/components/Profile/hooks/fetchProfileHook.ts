@@ -3,8 +3,6 @@ import {useCallback, useState} from 'react';
 import environment from '../../../config/environment';
 import {callTryCatch} from '../../../util/callTryCatch';
 import {httpClient} from '../../../util/httpClient';
-import useNavigateToLogin from '../../Onboarding/Login/hooks/navigateToLoginHook';
-import useToastMessage from '../../ToastMessage/hooks/toastMessageHook';
 
 interface ProfileData {
   id: string;

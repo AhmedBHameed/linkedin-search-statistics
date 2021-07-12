@@ -6,21 +6,21 @@ export interface VisitorInput {
   visitorIp: string;
 }
 
-const countVisitors = async (platformName: string): Promise<number | Error> => {
+const countVisitors = async (platformName: string): Promise<{totalVisits: number} | Error> => {
   try {
     const visitors = await visitorCounterModel.aggregate([
-      {$match: platformName},
+      {$match: {platformName}},
       {
         $group: {
           _id: null,
-          totalVisitors: {
+          totalVisits: {
             $sum: '$count',
           },
         },
       },
     ]);
 
-    return visitors[0].totalVisitors as number;
+    return {totalVisits: visitors[0].totalVisits};
   } catch (error) {
     logger.error('', error);
     return new Error(error.message);

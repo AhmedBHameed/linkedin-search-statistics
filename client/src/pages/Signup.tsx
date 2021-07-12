@@ -25,7 +25,7 @@ import {callTryCatch} from '../util/callTryCatch';
 const Signup: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const {goToLogin} = useNavigateToLogin();
-  const {notifyError} = useToastMessage();
+  const {notifyError, notifySuccess} = useToastMessage();
 
   const {
     control,
@@ -68,9 +68,14 @@ const Signup: React.FC = () => {
         return;
       }
 
+      notifySuccess({
+        message: 'Signup success',
+        description:
+          'Great! You will receive an email, follow instruction to verify your account',
+      });
       goToLogin();
     },
-    [notifyError, setLoading, goToLogin]
+    [notifyError, setLoading, notifySuccess, goToLogin]
   );
 
   const firstNameError = errors.firstName?.message;
@@ -98,7 +103,7 @@ const Signup: React.FC = () => {
                 <FormControl error={firstNameError} label="First name">
                   <Controller
                     control={control}
-                    name="email"
+                    name="firstName"
                     render={({field: {value, onChange}}) => (
                       <InputField
                         ariaLabel="first name"

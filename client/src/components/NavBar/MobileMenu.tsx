@@ -1,6 +1,7 @@
 import {
   BarChartOutlined,
   DashboardOutlined,
+  FileSearchOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 import {Menu as AntdMenu, Drawer} from 'antd';
@@ -70,6 +71,14 @@ const Menu: React.FC<MenuProps> = ({
         label="Statistics"
         onClick={onClose}
         to={NAVIGATION_ROUTES.statistics.path}
+      />
+
+      <ItemLink
+        icon={<FileSearchOutlined />}
+        key="3"
+        label="Jobs"
+        onClick={onClose}
+        to={NAVIGATION_ROUTES.jobs.path}
       />
 
       <SubMenu

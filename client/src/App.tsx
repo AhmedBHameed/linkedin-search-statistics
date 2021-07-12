@@ -20,6 +20,7 @@ import ViewportProvider from './components/WindowViewport/ViewportProvider';
 import NAVIGATION_ROUTES from './config/NavigationRoutes';
 import Dashboard from './pages/Dashboard';
 import ForgotPassword from './pages/ForgotPassword';
+import Jobs from './pages/Jobs';
 import JobStatistics from './pages/JobStatistics';
 import Login from './pages/Login';
 import ResetPassword from './pages/ResetPassword';
@@ -29,11 +30,12 @@ import {lightTheme} from './styles/Theme';
 const {
   basePath,
   dashboard,
-  statistics,
   forgotPassword,
+  jobs,
   login,
   resetPassword,
   signup,
+  statistics,
 } = NAVIGATION_ROUTES;
 
 const App: React.FC = () => {
@@ -49,6 +51,7 @@ const App: React.FC = () => {
     <NavBarProvider>
       <NavBar isAuthorized={!!data} />
       <Switch>
+        <Route {...jobs} component={Jobs} />
         {data && <Route {...dashboard} component={Dashboard} />}
         <Route {...statistics} component={JobStatistics} />
         <Redirect to={statistics.path} />

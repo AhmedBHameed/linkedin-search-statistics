@@ -4,29 +4,36 @@ import environment from '../../../config/environment';
 import {callTryCatch} from '../../../util/callTryCatch';
 import {httpClient} from '../../../util/httpClient';
 import useToastMessage from '../../ToastMessage/hooks/toastMessageHook';
-import {JobStatisticsModel} from '../models/JobStatisticsModel';
+import {JobsWithTotalCountModel} from '../models/JobsWithTotalCountModel';
 
-const useFetchJobStatistics = () => {
+const useFetchJobs = () => {
   const {notifyError} = useToastMessage();
-  const [data, setData] = useState<JobStatisticsModel>();
+  const [data, setData] = useState<JobsWithTotalCountModel>();
   const [error, setError] = useState<Error | undefined>();
   const [loading, setLoading] = useState(false);
 
-  const fetchJobStatistics = useCallback(
-    async (searchParam: {year: string; location: string}) => {
+  const fetchJobs = useCallback(
+    async (searchParam: {
+      year: string;
+      location: string;
+      perPage: number;
+      page: number;
+      query: string;
+    }) => {
       setLoading(true);
       setError(undefined);
 
       const [fetchError, response] = await callTryCatch(async () =>
-        httpClient.get<any, AxiosResponse<JobStatisticsModel>>(
-          `${environment.domainApi}/job-scraper/api/v1/statistics?year=${searchParam.year}&location=${searchParam.location}`
+        httpClient.get<any, AxiosResponse<JobsWithTotalCountModel>>(
+          `${environment.domainApi}/jobs-scrap/api/v1/jobs?perPage=${searchParam.perPage}&page=${searchParam.page}` +
+            `&year=${searchParam.year}&location=${searchParam.location}&query=${searchParam.query}`
         )
       );
 
       setLoading(false);
 
       const jobStatistics = (
-        response as AxiosResponse<JobStatisticsModel> | undefined
+        response as AxiosResponse<JobsWithTotalCountModel> | undefined
       )?.data;
 
       if (fetchError) {
@@ -52,8 +59,8 @@ const useFetchJobStatistics = () => {
     loading,
     data,
     error,
-    fetchJobStatistics,
+    fetchJobs,
   };
 };
 
-export default useFetchJobStatistics;
+export default useFetchJobs;

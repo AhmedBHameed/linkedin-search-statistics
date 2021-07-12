@@ -1672,6 +1672,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@south-paw/react-vector-maps@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@south-paw/react-vector-maps/-/react-vector-maps-3.1.0.tgz#f4b371d14b46de8fa12a0f594e565cd7aa5278f3"
+  integrity sha512-wjoSzfoMPynA+8owHD4lABYxxdqVhFwZ5k4CchlkSpmkqsQNtG8Mfj7C2+niG6p4Ouzu6rC3hQ2BRJRZDXolHw==
+
 "@stylelint/postcss-css-in-js@^0.37.2":
   version "0.37.2"
   resolved "https://registry.yarnpkg.com/@stylelint/postcss-css-in-js/-/postcss-css-in-js-0.37.2.tgz#7e5a84ad181f4234a2480803422a47b8749af3d2"
@@ -4560,6 +4565,11 @@ detect-port-alt@1.1.6:
     address "^1.0.1"
     debug "^2.6.0"
 
+diacritics@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/diacritics/-/diacritics-1.3.0.tgz#3efa87323ebb863e6696cebb0082d48ff3d6f7a1"
+  integrity sha1-PvqHMj67hj5mls67AILUj/PW96E=
+
 diff-sequences@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-26.6.2.tgz#48ba99157de1923412eed41db6b6d4aa9ca7c0b1"
@@ -6281,6 +6291,13 @@ husky@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/husky/-/husky-7.0.1.tgz#579f4180b5da4520263e8713cc832942b48e1f1c"
   integrity sha512-gceRaITVZ+cJH9sNHqx5tFwbzlLCVxtVZcusME8JYQ8Edy5mpGDOqD8QBCdMhpyo9a+JXddnujQ4rpY2Ff9SJA==
+
+i18n-iso-countries@^6.8.0:
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/i18n-iso-countries/-/i18n-iso-countries-6.8.0.tgz#eebbc75594c6832aff86176c1bb38daa133d6dfd"
+  integrity sha512-jJs/+CA6+VUICFxqGcB0vFMERGfhfvyNk+8Vb9EagSZkl7kSpm/kT0VyhvzM/zixDWEV/+oN9L7v/GT9BwzoGg==
+  dependencies:
+    diacritics "1.3.0"
 
 iconv-lite@0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
@@ -8318,10 +8335,10 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
-nocknock-sdk@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/nocknock-sdk/-/nocknock-sdk-1.0.1.tgz#c9deaa8351dfe0de6b16d642becf43e3e55c389a"
-  integrity sha512-O8rlrvZbVLNH6SQkvrWnCf9qrnw+hkZgGhxkdpHVwsttOxYEQ4SrcNMd9SayCtVs1ym/Kag81YeBkyJCy+Zdpw==
+nocknock-sdk@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/nocknock-sdk/-/nocknock-sdk-1.0.2.tgz#6644181f8172b3b68acf68c6cce380eabfe3cc53"
+  integrity sha512-c8csJk7jqAtfQilk1le4rvEmYLHeu1CgTWgpQzfKmS4OyWfTHfGkkJRXwLgnyFiUVyDLXoU4C7+HjGlLwZygqw==
   dependencies:
     axios "^0.21.1"
 

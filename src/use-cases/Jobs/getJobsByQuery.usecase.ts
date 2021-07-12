@@ -22,7 +22,13 @@ const getJobsByQuery = async (inputData: JobQueryInput): Promise<{jobs: IJobScra
                 },
               },
               {$skip: perPage * (page - 1)},
-              {$limit: perPage * page},
+              {$limit: perPage},
+              {
+                $project: {
+                  _id: 0,
+                  __v: 0,
+                },
+              },
             ],
             totalCount: [
               {

@@ -18,7 +18,7 @@ const useFetchJobSearchLocations = () => {
 
     const [fetchError, response] = await callTryCatch(async () =>
       httpClient.get<any, AxiosResponse<JobSearchLocationsModel>>(
-        `${environment.domainApi}/job-scraper/api/v1/job/locations`
+        `${environment.domainApi}/jobs-scrap/api/v1/job/locations`
       )
     );
 

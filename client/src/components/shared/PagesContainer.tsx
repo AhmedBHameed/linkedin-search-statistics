@@ -1,23 +1,28 @@
 import {Col, Row} from 'antd';
 import React from 'react';
 import styled from 'styled-components';
-import Title from './Title';
 
 const StyledRow = styled(Row)`
   padding: 4rem 1rem;
 `;
 
 interface OrderContainerProps {
-  headTitle?: string;
+  headTitle?: React.ReactNode;
+  colXs?: number;
+  colMd?: number;
+  colLg?: number;
 }
 
 const PagesContainer: React.FC<OrderContainerProps> = ({
   children,
   headTitle,
+  colXs,
+  colMd,
+  colLg,
 }) => (
-  <StyledRow align="middle" justify="center">
-    <Col lg={18} md={22} xs={24}>
-      {headTitle && <Title level={4}>{headTitle}</Title>}
+  <StyledRow align="top" gutter={[0, 16]} justify="center">
+    <Col lg={colLg || 16} md={colMd || 22} xs={colXs || 23}>
+      {headTitle && headTitle}
 
       {children}
     </Col>

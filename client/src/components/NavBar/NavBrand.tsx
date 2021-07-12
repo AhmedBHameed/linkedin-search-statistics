@@ -11,7 +11,7 @@ const BrandContainer = styled.div`
 
 const NavBrand: React.FC = () => (
   <BrandContainer>
-    <Link to={NAVIGATION_ROUTES.dashboard.path}>
+    <Link to={NAVIGATION_ROUTES.statistics.path}>
       <Brand />
     </Link>
   </BrandContainer>

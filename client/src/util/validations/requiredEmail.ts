@@ -22,6 +22,6 @@ export const requiredEmail = (conf?: EmailErrorMessages) =>
     .email({tlds: {allow: false}}) // Disable top level domain of email to prevent error validation.
     .required()
     .messages({
-      'string.email': conf?.invalidEmail || 'validationError.invalidEmail',
-      'string.empty': conf?.required || 'validationError.required',
+      'string.email': conf?.invalidEmail || 'Invalid email',
+      'string.empty': conf?.required || 'Field required',
     });

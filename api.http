@@ -1,9 +1,9 @@
-GET http://localhost:5050/job-scraper/api/v1/settings HTTP/1.1
+GET http://localhost:5050/jobs-scrap/api/v1/settings HTTP/1.1
 content-type: application/json
 
 ###
 
-POST http://localhost:5050/job-scraper/api/v1/settings HTTP/1.1
+POST http://localhost:5050/jobs-scrap/api/v1/settings HTTP/1.1
 content-type: application/json
 
 {
@@ -19,11 +19,16 @@ content-type: application/json
 
 ###
 
-GET http://localhost:5050/job-scraper/api/v1/statistics?year=2021&location=Australia HTTP/1.1
+GET http://localhost:5050/jobs-scrap/api/v1/statistics?year=2021&location=Australia HTTP/1.1
 content-type: application/json
 
 
 ###
 
-GET http://localhost:5050/job-scraper/api/v1/jobs?perPage=50&page=1&year=2021&location=australia&query=Node.js HTTP/1.1
+GET http://localhost:5050/jobs-scrap/api/v1/jobs?perPage=50&page=1&year=2021&location=australia&query=Node.js HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:5050/jobs-scrap/api/v1/total-visits HTTP/1.1
 content-type: application/json

@@ -19,7 +19,7 @@ const useFetchJobStatistics = () => {
 
       const [fetchError, response] = await callTryCatch(async () =>
         httpClient.get<any, AxiosResponse<JobStatisticsModel>>(
-          `${environment.domainApi}/job-scraper/api/v1/statistics?year=${searchParam.year}&location=${searchParam.location}`
+          `${environment.domainApi}/jobs-scrap/api/v1/statistics?year=${searchParam.year}&location=${searchParam.location}`
         )
       );
 

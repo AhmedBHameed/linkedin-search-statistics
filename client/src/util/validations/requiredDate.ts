@@ -27,7 +27,7 @@ export const requiredDate = (dateFormat?: string, conf?: StringErrorMessages) =>
     .messages({
       'date.base': conf?.invalidDate || 'validationError.invalidDate',
       'date.max': conf?.invalidMaxDate || 'validationError.invalidMaxDate',
-      'string.empty': conf?.required || 'validationError.required',
-      'any.required': conf?.required || 'validationError.required',
+      'string.empty': conf?.required || 'Field required',
+      'any.required': conf?.required || 'Field required',
       'date.format': conf?.required || 'validationError.invalidDate',
     });

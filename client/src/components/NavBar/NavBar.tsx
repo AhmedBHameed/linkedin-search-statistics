@@ -1,4 +1,8 @@
-import {BarChartOutlined, DashboardOutlined} from '@ant-design/icons';
+import {
+  BarChartOutlined,
+  DashboardOutlined,
+  FileSearchOutlined,
+} from '@ant-design/icons';
 import {Layout} from 'antd';
 import React, {useCallback, useState} from 'react';
 import styled from 'styled-components';
@@ -76,6 +80,13 @@ const NavBar: React.FC<NavBarProps> = ({isAuthorized}) => {
                 key="2"
                 label="Statistics"
                 to={NAVIGATION_ROUTES.statistics.path}
+              />
+
+              <ItemLink
+                icon={<FileSearchOutlined />}
+                key="3"
+                label="Jobs"
+                to={NAVIGATION_ROUTES.jobs.path}
               />
             </StyledAntdMenu>
           )}

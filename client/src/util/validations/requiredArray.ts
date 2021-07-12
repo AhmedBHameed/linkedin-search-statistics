@@ -19,5 +19,5 @@ export const requiredArray = (conf?: ArrayErrorMessages) =>
     .items(Joi.any())
     .required()
     .messages({
-      'any.required': conf?.required || 'validationError.required',
+      'any.required': conf?.required || 'Field required',
     });

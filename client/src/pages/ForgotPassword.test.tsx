@@ -76,7 +76,7 @@ describe('ForgotPassword', () => {
 
       const inputErrors = await findAllByTestId('input-error');
 
-      expect(inputErrors[0].textContent).toBe('validationError.required');
+      expect(inputErrors[0].textContent).toBe('Field required');
       expect(mockGoToSignup).toHaveBeenCalledTimes(0);
       expect(mockNotifyError).toHaveBeenCalledTimes(0);
       expect(mockForgotPasswordHook).toHaveBeenCalledTimes(0);

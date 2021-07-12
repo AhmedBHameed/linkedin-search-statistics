@@ -25,6 +25,6 @@ export const requiredPassword = (conf?: PasswordErrorMessages) =>
     .messages({
       'string.pattern.base':
         conf?.invalidPassword || 'validationError.invalidPassword',
-      'any.required': conf?.required || 'validationError.required',
-      'string.empty': conf?.required || 'validationError.required',
+      'any.required': conf?.required || 'Field required',
+      'string.empty': conf?.required || 'Field required',
     });

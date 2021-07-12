@@ -24,7 +24,6 @@ interface ProfileSubMenuProps {
 const ProfileSubMenu: React.FC<ProfileSubMenuProps> = ({
   activeIndex,
   className,
-  onClick,
   loginOrLogoutItemComponent,
 }) => (
   <StyledAntdMenu

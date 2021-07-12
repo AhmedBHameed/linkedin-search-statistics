@@ -17,7 +17,8 @@ import {JobsRouter} from '../Controllers/JobsController';
 import {connectRedis} from '../services/redisClient';
 import {listRoutes} from '../util/listRoutes';
 import {JobSearchLocationsRouter} from '../Controllers/JobSearchLocationsController';
-import {visitorCounter} from 'src/middlewares/visitorCounter/visitorCounter';
+import {JobsScrapWebAppRouter} from '../Controllers/JobStatisticWebController';
+import {JobWebTotalVisitorsRouter} from '../Controllers/JobWebTotalVisitorsController';
 
 const {port, allowCorsDomains, isProd, rootPath} = environment;
 
@@ -51,13 +52,16 @@ export default async (): Promise<void> => {
   app.use(express.urlencoded({extended: true}));
   app.use(mongoSanitize());
   app.use(helmet({contentSecurityPolicy: false}));
-  app.use(visitorCounter({platformName: 'jobs scrap'}));
 
-  app.use(`${rootPath}/public`, express.static('public/assets'));
+  app.use(`${rootPath}/static`, express.static('client/build/static'));
+
   app.use(JobsRouter);
   app.use(JobSearchSettingRouter);
   app.use(JobStatisticsRouter);
   app.use(JobSearchLocationsRouter);
+  app.use(JobWebTotalVisitorsRouter);
+
+  app.use(JobsScrapWebAppRouter);
 
   await cronJob.run();
   app.listen(port, () => {

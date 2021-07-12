@@ -8,6 +8,7 @@ export interface JobScrapModel {
   jobDate: string;
   link: string;
   applyLink: string;
+  description: string;
   senorityLevel: string;
   jobFunction: string;
   employmentType: string;

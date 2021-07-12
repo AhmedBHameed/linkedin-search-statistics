@@ -73,7 +73,7 @@ describe('ResetPassword', () => {
 
       const inputErrors = await findAllByTestId('input-error');
 
-      expect(inputErrors[0].textContent).toBe('validationError.required');
+      expect(inputErrors[0].textContent).toBe('Field required');
       expect(mockResetPasswordHook).toHaveBeenCalledTimes(0);
       expect(mockGoToLogin).toHaveBeenCalledTimes(0);
       expect(mockNotifyError).toHaveBeenCalledTimes(0);

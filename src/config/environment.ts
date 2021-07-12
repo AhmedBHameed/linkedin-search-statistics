@@ -7,7 +7,7 @@ export default {
   allowCorsDomains: isProd
     ? ['https://ahmedhameed.dev', 'https://www.ahmedhameed.dev']
     : ['http://localhost:5050', 'http://localhost:3000', 'http://192.168.0.94:3000'],
-  rootPath: '/job-scraper',
+  rootPath: '/jobs-scrap',
   apiVersion: '/api/v1',
   database: {
     dbName: 'admin',

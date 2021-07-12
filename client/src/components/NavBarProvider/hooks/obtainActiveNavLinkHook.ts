@@ -2,7 +2,7 @@ import {useMemo, useState} from 'react';
 import {useLocation} from 'react-router-dom';
 import NAVIGATION_ROUTES from '../../../config/NavigationRoutes';
 
-const {dashboard, statistics} = NAVIGATION_ROUTES;
+const {dashboard, statistics, jobs} = NAVIGATION_ROUTES;
 
 const useObtainActiveNavLink = () => {
   const {pathname} = useLocation();
@@ -16,6 +16,10 @@ const useObtainActiveNavLink = () => {
 
       case pathname === statistics.path:
         setActiveIndex('2');
+        break;
+
+      case pathname === jobs.path:
+        setActiveIndex('3');
         break;
 
       default:

@@ -1,4 +1,4 @@
-const {BUILD_ENV, LOG_LEVEL, MONGODB_PASS, REDIS_PASSWORD, VERSION} = process.env;
+const {BUILD_ENV, LOG_LEVEL, MONGODB_PASS, REDIS_PASSWORD, LI_AT_COOKIE, VERSION} = process.env;
 
 const port = '5050';
 const isProd = BUILD_ENV === 'production';
@@ -30,6 +30,7 @@ export default {
     password: REDIS_PASSWORD,
     port: 6379,
   },
+  liAtCookie: LI_AT_COOKIE || '',
   port,
   version: VERSION,
 };

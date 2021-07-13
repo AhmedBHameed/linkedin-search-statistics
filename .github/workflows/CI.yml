@@ -45,7 +45,7 @@ jobs:
             source ~/.nvm/nvm.sh
             echo "🛫 Building application"
             npm install
-            MONGODB_PASS=${{ secrets.MONGODB_PASS }} REDIS_PASSWORD=${{ secrets.REDIS_PASSWORD }} npm run build
+            LI_AT_COOKIE=${{ secrets.LI_AT_COOKIE }} MONGODB_PASS=${{ secrets.MONGODB_PASS }} REDIS_PASSWORD=${{ secrets.REDIS_PASSWORD }} npm run build
             cd ..
             echo "🔄 Shutdown docker container ..."
             sudo docker-compose -f docker-compose.prod.yml stop

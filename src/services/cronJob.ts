@@ -11,7 +11,7 @@ import {logger} from './Logger';
 class ScheduleTask {
   public async run() {
     new CronJob(
-      '00 00 */8 * * *',
+      '0 0 */8 * * *',
       async () => {
         if (isScraperFinished) {
           const [searchLocationsError, searchLocationResults] = await callTryCatch(

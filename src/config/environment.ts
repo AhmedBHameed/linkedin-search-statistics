@@ -13,7 +13,7 @@ export default {
     dbName: 'admin',
     password: MONGODB_PASS,
     port: 27017,
-    server: isProd ? 'mongo' : 'localhost',
+    server: 'mongodb',
     user: 'super',
   },
   isProd,
@@ -26,7 +26,7 @@ export default {
     port: 5001,
   },
   redis: {
-    host: isProd ? 'redis' : 'localhost',
+    host: 'redis',
     password: REDIS_PASSWORD,
     port: 6379,
   },

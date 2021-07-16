@@ -12,13 +12,13 @@ import {bindLoggerToGlobalErrorHandlers, logger} from '../services/Logger';
 import MongoConnectionClass from '../database/MongoConnectionLocator';
 import {JobSearchSettingRouter} from '../Controllers/JobSearchSettingController';
 import {JobStatisticsRouter} from '../Controllers/JobStatisticsController';
-import cronJob from '../services/cronJob';
 import {JobsRouter} from '../Controllers/JobsController';
 import {connectRedis} from '../services/redisClient';
 import {listRoutes} from '../util/listRoutes';
 import {JobSearchLocationsRouter} from '../Controllers/JobSearchLocationsController';
 import {JobsScrapWebAppRouter} from '../Controllers/JobStatisticWebController';
 import {JobWebTotalVisitorsRouter} from '../Controllers/JobWebTotalVisitorsController';
+import {StoreJobScrapRouter} from '../Controllers/StoreJobScrapController';
 
 const {port, allowCorsDomains, isProd, rootPath} = environment;
 
@@ -60,10 +60,9 @@ export default async (): Promise<void> => {
   app.use(JobStatisticsRouter);
   app.use(JobSearchLocationsRouter);
   app.use(JobWebTotalVisitorsRouter);
-
+  app.use(StoreJobScrapRouter);
   app.use(JobsScrapWebAppRouter);
 
-  await cronJob.run();
   app.listen(port, () => {
     logWelcome();
 

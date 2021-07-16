@@ -3,6 +3,11 @@ content-type: application/json
 
 ###
 
+GET http://localhost:5050/jobs-scrap/api/v1/job/locations HTTP/1.1
+content-type: application/json
+
+###
+
 POST http://localhost:5050/jobs-scrap/api/v1/settings HTTP/1.1
 content-type: application/json
 
